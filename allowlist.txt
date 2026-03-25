@@ -1,0 +1,60 @@
+# fastblock allowlist
+# Domains listed here are removed from the generated hosts file.
+# This preserves affiliate link tracking so content creators retain
+# revenue attribution when their readers use PiHole.
+#
+# One domain per line. Lines starting with # are ignored.
+# Subdomains are NOT automatically covered — add them explicitly if needed.
+
+# --- Amazon Associates ---
+# Amazon's official short-link redirector (affiliate links, e.g. amzn.to/xyz)
+amzn.to
+# Amazon affiliate cookie/attribution domain
+assoc-amazon.com
+
+# --- CJ Affiliate (formerly Commission Junction) ---
+# All domains below are CJ tracking and redirect infrastructure.
+# Blocking any of these breaks affiliate link clicks tracked through CJ.
+anrdoezrs.net
+dpbolvw.net
+qksrv.net
+tkqlhce.com
+jdoqocy.com
+kqzyfj.com
+lduhtrp.net
+emjcd.com
+
+# --- Impact (formerly Impact Radius) ---
+# Primary redirect domain for Impact affiliate links
+sjv.io
+
+# --- Awin ---
+awin1.com
+awin.com
+
+# --- Rakuten Advertising (formerly LinkShare) ---
+linksynergy.com
+# Rakuten click-tracking subdomain
+click.linksynergy.com
+
+# --- ShareASale ---
+shareasale.com
+
+# --- Skimlinks ---
+# Skimlinks automatically converts product links to affiliate links
+skimlinks.com
+go.skimresources.com
+
+# --- Partnerize ---
+prf.hn
+
+# --- eBay Partner Network ---
+# eBay's affiliate redirect domain
+rover.ebay.com
+
+# --- FlexOffers ---
+flexoffers.com
+
+# --- Viglink (now Sovrn Commerce) ---
+viglink.com
+vig.link

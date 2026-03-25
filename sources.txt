@@ -1,0 +1,20 @@
+# fastblock source list
+# One URL per line. Lines starting with # are ignored.
+# Sources are processed in order; duplicates are deduplicated automatically.
+
+# HaGeZi Pro - comprehensive multi-category blocklist (ads, tracking, malware)
+# Format: hosts (0.0.0.0)
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.txt
+
+# AdGuard DNS Filter - strong mobile ad and tracker coverage
+# Aggregates: AdGuard Base, Mobile Ads, Spyware, Social, EasyList, EasyPrivacy
+# Format: adblock (||domain^)
+https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+
+# OISD Big - broad coverage, curated for low false positives
+# Format: adblock (||domain^)
+https://big.oisd.nl/
+
+# URLhaus - active malware distribution sites (abuse.ch)
+# Format: hosts (127.0.0.1)
+https://urlhaus.abuse.ch/downloads/hostfile/
