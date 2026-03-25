@@ -7,7 +7,7 @@ A PiHole blocklist aggregated from multiple reputable sources, with an allowlist
 Add the following URL under **Group Management → Adlists**:
 
 ```
-https://raw.githubusercontent.com/part-avocado/fastblock/main/hosts
+https://raw.githubusercontent.com/part-avocado/fastblock/master/hosts
 ```
 
 Then run **Tools → Update Gravity**.
