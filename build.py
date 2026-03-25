@@ -180,10 +180,23 @@ def parse_source(text: str) -> set[str]:
 
 
 def apply_allowlist(domains: set[str], allowlist: frozenset[str]) -> set[str]:
-    removed = domains & allowlist
+    # Support both exact matches (example.com) and suffix matches (*.example.com).
+    # A blocked domain is removed if it equals an allowlist entry OR ends with .{entry}.
+    result = set()
+    removed = 0
+    for domain in domains:
+        allowed = False
+        for entry in allowlist:
+            if domain == entry or domain.endswith("." + entry):
+                allowed = True
+                break
+        if allowed:
+            removed += 1
+        else:
+            result.add(domain)
     if removed:
-        logging.info("Allowlist removed %d domain(s)", len(removed))
-    return domains - allowlist
+        logging.info("Allowlist removed %d domain(s)", removed)
+    return result
 
 
 def build_header(sources: list[str], domain_count: int) -> str:

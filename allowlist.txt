@@ -4,7 +4,7 @@
 # revenue attribution when their readers use PiHole.
 #
 # One domain per line. Lines starting with # are ignored.
-# Subdomains are NOT automatically covered — add them explicitly if needed.
+# Subdomains ARE automatically covered — adding example.com also allows *.example.com.
 
 # --- Amazon Associates ---
 # Amazon's official short-link redirector (affiliate links, e.g. amzn.to/xyz)
@@ -58,3 +58,62 @@ flexoffers.com
 # --- Viglink (now Sovrn Commerce) ---
 viglink.com
 vig.link
+
+# --- Email marketing link redirects ---
+# These domains are used by email platforms to wrap links for click tracking.
+# Blocking them breaks links in legitimate newsletters and transactional emails.
+
+# HubSpot email link tracking (one domain per pricing tier)
+hubspotlinks.com
+hubspotlinksstarter.com
+hubspotlinksfree.com
+
+# Constant Contact (Roving Software redirect infrastructure)
+rs6.net
+
+# Mailchimp / Intuit
+list-manage.com
+mailchi.mp
+
+# SendGrid / Twilio (used by many transactional senders)
+sendgrid.net
+
+# Campaign Monitor
+createsend.com
+cmail1.com
+cmail2.com
+cmail3.com
+cmail4.com
+cmail5.com
+cmail6.com
+cmail7.com
+cmail8.com
+cmail9.com
+cmail10.com
+cmail11.com
+cmail12.com
+cmail13.com
+cmail14.com
+cmail15.com
+cmail16.com
+cmail17.com
+cmail18.com
+cmail19.com
+cmail20.com
+
+# Klaviyo
+klaviyo.com
+
+# ActiveCampaign
+activecampaign.com
+
+# Brevo (formerly Sendinblue)
+brevo.com
+sendinblue.com
+
+# Drip
+getdrip.com
+
+# ConvertKit
+convertkit.com
+ck.page
