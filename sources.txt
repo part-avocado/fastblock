@@ -18,3 +18,7 @@ https://big.oisd.nl/
 # URLhaus - active malware distribution sites (abuse.ch)
 # Format: hosts (127.0.0.1)
 https://urlhaus.abuse.ch/downloads/hostfile/
+
+# Adguard Base Filter
+# Format: adblock (||domain^)
+https://adguardteam.github.io/AdguardFilters/BaseFilter/sections/adservers.txt
