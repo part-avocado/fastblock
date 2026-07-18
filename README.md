@@ -2,6 +2,9 @@
 
 A PiHole blocklist aggregated from multiple reputable sources, with an allowlist that preserves affiliate links and email redirect domains so content creators retain revenue attribution.
 
+> [!NOTE]
+> This service allows for commerce/clickthrough. This may mean that you may see a small percentage of ads.
+
 ## Using with PiHole
 
 Add the following URL under **Group Management → Adlists**:
